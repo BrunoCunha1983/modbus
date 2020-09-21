@@ -130,7 +130,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
             continue
 
         if register[CONF_COUNT] * 2 != size:
-            _LOGGER.error(
+            _LOGGER.warning(
                 "Structure size (%d bytes) mismatch registers count (%d words)",
                 size,
                 register[CONF_COUNT],
